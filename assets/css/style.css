@@ -1,0 +1,409 @@
+/*
+
+Project Name:  Leaven
+Author: Nishat
+Version: 1.0
+Company: Pixcafe Network
+Desription: Leaven is a ecommerce html5 responsive template
+
+
+================================
+       TABLE OF INDEX
+=================================
+
+01. 
+
+
+*/
+
+/* variables */
+:root{
+       --primary:#f15724;
+       --secondary: #202b31;
+}
+
+/* Default css */
+*{
+       margin: 0;
+       padding: 0;
+       outline: 0;
+       box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6, p{margin: 0;}
+body{
+       font-family: 'Montserrat';
+}
+.bg-repeat{
+       background-repeat: no-repeat;
+       background-size: cover;
+}
+ul{
+       margin: 0;
+       padding: 0;
+       list-style: none;
+}
+a{
+   text-decoration: none;
+   transition: all .4s ease;
+}
+.custom-button{
+       background-color: var(--primary);
+       color: #fff;
+       padding: 8px 16px;
+       display: inline-block;
+}
+
+
+
+/* Header area */
+
+/* Header Top Area */
+.leaven_header_top a{
+       color: #fff;
+}
+.leaven_header_top a:hover{
+       color:  var(--primary);
+}
+.leaven_header_top{
+       background-color: var(--secondary);
+       color: #fff;
+       padding: 18px 0;
+       font-size: 14px;
+       font-weight: 300;
+}
+.leaven__top-left_content ul li{
+       display: inline-block;
+}
+.leaven__top-left_content ul li a{
+       display: block;
+}
+.leaven__top-left_content ul li {
+       margin-right: 26px;
+   }
+.leaven__top-left_content a i {
+       margin-right: 10px;
+   }
+.leaven__top-left_content li i {
+       margin-right: 10px;
+   }
+
+
+
+.leaven_social_proofile ul li{
+       display: inline-block;
+       margin-right: 11px;
+       background: #fff;
+       border-radius: 50%;
+       width: 25px;
+       height: 25px;
+       line-height: 25px;
+       text-align: center;
+       transition: all .4s ease;
+}
+.leaven_social_proofile ul li a{
+       display: block;
+       color: var(--secondary);
+}
+.leaven_social_proofile ul li:hover {
+       background: var(--primary);
+   }
+.leaven_social_proofile ul li:hover a{
+       color: var(--secondary);
+   }
+
+
+
+.leaven__site_meta ul li{
+       display: inline-block;
+       position: relative;
+}
+.leaven__site_meta ul li a{
+       display: block;
+}
+.leaven__site_meta ul li:last-child {
+       margin-left: 15px;
+   }
+.leaven__site_meta ul li:last-child span {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    font-size: 80%;
+    border-radius: 50%;
+    right: -11px;
+    bottom: 9px;
+    background: var(--primary);
+    text-align: center;
+    font-weight: bolder;
+    border: 1px solid var(--primary);
+    line-height: 20px;
+   }
+.leaven__site_meta ul li:last-child span:hover {
+       color: #fff;
+   }   
+
+
+   /* 
+       02 - header bottom area
+   */
+
+   .leaven_header_bottom{
+          padding: 25px 0;
+   }
+
+   /* Logo */
+   .leaven__logo h1{
+          color: var(--secondary);
+          font-family: 'Mont Heavy DEMO';
+   }
+   .leaven__logo h1 span{
+          color: var(--primary);
+   }
+
+   /* Main Menu */
+   .leaven__main_menu ul li{position: relative;}
+   .leaven__main_menu ul li a{
+          color: var(--secondary);
+          padding: 2px 15px;
+          font-family: 'Montserrat';
+          font-weight: 600;
+   }
+   .leaven__main_menu ul li a:hover{
+          color: var(--primary);
+   }
+
+   /* Dropdown */
+   .leaven__main_menu ul li.dropdown ul {
+       position: absolute;
+       top: 150% ;
+       z-index: 9;
+       left: 0;
+       width: 250px;
+       background-color: var(--secondary);
+       padding: 10px;
+       border-radius: 5px;
+       box-shadow: 0 0 5px ;
+       visibility: hidden;
+       opacity: 0;
+       transition: all .4s ease-in-out;
+   }
+   .leaven__main_menu ul li.dropdown:hover ul{
+          visibility: visible;
+          opacity: 1;
+          top: 100% ;
+   }
+   .leaven__main_menu ul li.dropdown ul li {
+          display: block;
+          border-bottom: 1px solid #685f5f;
+          padding: 11px;
+   }
+   .leaven__main_menu ul li.dropdown a i{
+          color: var(--primary);
+          font-weight: bolder;
+          margin-left: 5px;
+   }
+   .leaven__main_menu ul li.dropdown ul li:last-child{
+          border-bottom: 0;
+   }
+   .leaven__main_menu ul li.dropdown ul li a{
+          color: #fff;
+          font-size: 80%;
+   }
+   .leaven__main_menu ul li.dropdown:hover a, .leaven__main_menu ul li.dropdown:hover ul li a:hover{
+          color: var(--primary);
+   }
+   .leaven__main_menu ul li.dropdown:hover ul li a{
+          color: #fff;
+   }
+
+   /* Search */
+   .leaven__search form {
+       display: flex;
+       justify-content: flex-end;
+   }
+   .leaven__search form input {
+       border: 1px solid var(--primary);
+       padding: 5px 15px 5px;
+       border-radius: 11px 0 0 11px;
+   }
+   .leaven__search form  button{
+          background-color: var(--primary);
+          color: #fff;
+          border: 0;
+          padding: 5px 15px;
+          border-radius: 0 11px 11px 0;
+          transition: all 1s ease-in-out;
+       }
+    .leaven__search form  button:hover{
+           background-color: transparent;
+           color: var(--secondary);
+    }
+
+    /* 
+      * ============================================
+            03. Hero Area
+      * ============================================
+    */
+
+    section#leaven__hero_area {
+      
+       color: #fff;
+   }
+    .leaven__hero_single_slide {
+       height: 100vh;
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       
+       position: relative;
+   }
+
+   .leaven__hero_single_slide::after{
+       position: absolute;
+       content: '';
+       width: 100%;
+       height: 100%;
+       top: 0;
+       left: 0;
+       background-color: var(--secondary);
+       opacity: .3;
+   }
+   .leaven__hero_content {
+       position: absolute;
+       top: 50%;
+       transform: translateY(-50%);
+       z-index: 1;
+       right: 100px;
+   }
+
+   .leaven__hero_content h3{
+       font-family: 'Montserrat';
+       font-weight: bold;
+       font-size: 40px;
+   }
+
+   .leaven__hero_content h1{
+          font-size: 75px;
+          margin: 20px 0;
+          font-family: 'Bebas Neue';
+          font-weight: bold;
+   }
+
+   /* 
+      * ============================================
+            04. Promo Area
+      * ============================================
+    */
+
+    section#leaven__promo_area {
+       margin-top: -113px;
+       z-index: 1;
+       position: relative;
+       top: 50px;
+   }
+    .bg-section{
+           
+           box-shadow: 0 0  5px #a7a3a3;
+    }
+    .leaven__promo_content h2{
+           color: var(--secondary);
+           font-family: 'Bebas Neue';
+           font-size: 25px;
+    }
+    .leaven__promo_content p{
+       color: var(--secondary);
+    }
+    .leaven__promo_icon{
+           margin-right: 30px;
+    }
+    .leaven__promo_icon i{
+           font-size: 30px;
+    }
+    .leaven__single_promo_item {
+       transition: all .4s ease;
+       padding: 30px 40px;
+   }
+    .leaven__single_promo_item:hover , .leaven__single_promo_item.active{
+           background: var(--primary);
+           color: #fff;
+           cursor: pointer;
+    }
+    .leaven__single_promo_item:hover .leaven__promo_content h2, .leaven__single_promo_item:hover .leaven__promo_content p{color: #fff;}
+    .leaven__single_promo_item.active h2, .leaven__single_promo_item.active p{color: #fff;}
+
+
+     /* 
+      * ============================================
+            05. Sale Area
+      * ============================================
+     */
+     #leaven__sale_area {
+       padding: 50px 0;
+       background: #f9f9f9;
+   }
+     .leaven__sale_content {
+       padding: 200px 0;
+       text-align: center;
+   }
+   .leaven__sale_content h2 {
+       margin-bottom: 26px;
+       text-transform: uppercase;
+       font-weight: bold;
+       color: var(--secondary);
+       font-size: 47px;
+   }
+   .leaven__sale_img {
+       background-position: center top;
+       background-repeat: no-repeat;
+       background-size: contain;
+   }
+    /* 
+      * ============================================
+            06. Offer Area
+      * ============================================
+     */
+
+     section#leaven__offer_area {
+       padding: 120px 0;
+     }
+     .leaven__single_offer {
+       text-align: right;
+       color: #fff;
+      }
+     .leaven__single_offer img{
+            margin-bottom: 15px;
+            width: 100%;
+     }
+     .leaven__single_offer h1 {
+       font-size: 29px;
+       font-weight: bold;
+       text-transform: uppercase;
+   }
+   .leaven__offer_content {
+       width: 150px;
+       margin-left: auto;
+       padding: 22px 13px 0 0px;
+   }
+   .leaven__single_offer img:last-child {
+       margin-bottom: 0;
+   }
+   .leaven__offer_content a {
+       color: #fff;
+       margin-top: 6px;
+       display: inline-block;
+       text-decoration: underline;
+       text-transform: uppercase;
+   }
+   .leaven__offer_content a:hover{color: var(--primary);}
+   .leaven__single_offer:last-child .leaven__offer_content a:hover{color: var(--primary);}
+   .leaven__single_offer:last-child .leaven__offer_content,  .leaven__single_offer:last-child .leaven__offer_content a{
+       margin-right: auto;
+       margin-left: 0;
+       text-align: left;
+       color: #202b31;
+   }
+   
+   /* 
+      * ============================================
+            08. Features product Area
+      * ============================================
+     */
