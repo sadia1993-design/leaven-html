@@ -326,6 +326,18 @@ section#leaven__hero_area {
   font-weight: bold;
 }
 
+section#leaven__hero_area .slick-dots {
+  bottom: 12%;
+}
+section#leaven__hero_area .slick-dots li {
+  width: 15px;
+  height: 15px;
+  background-color: #ddd;
+  border-radius: 50%;
+}
+section#leaven__hero_area .slick-dots li.slick-active{
+   background-color: var(--primary);
+}
 /* 
       * ============================================
             04. Promo Area
@@ -747,6 +759,8 @@ section#leaven__most_viewed_products_area {
 .leaven__single_carousel_item {
   text-align: center;
   padding: 50px;
+  transform: scale(.6);
+  transition: all .4s ease-in;
 }
 
 .leaven__single_carousel_item h2 {
@@ -775,4 +789,54 @@ section#leaven__most_viewed_products_area {
 .leaven__carousel_product_meta ul li a i:hover {
   background-color: var(--primary);
   color: #fff;
+}
+
+
+.leaven__single_carousel_item.slick-slide.slick-current.slick-active.slick-center{
+  transform: scale(1.2);
+  padding: 70px 50px;
+}
+
+.leaven__single_carousel_item .leaven__carousel_product_meta{
+  opacity: 0;
+  margin-top: -30px;
+  transition: all .4s ease-in;
+}
+
+
+.leaven__single_carousel_item.slick-slide.slick-current.slick-active.slick-center .leaven__carousel_product_meta{
+  opacity: 1;
+  margin-top: 0;
+}
+.leaven__single_carousel_item.slick-slide.slick-current.slick-active.slick-center h2{
+  font-size: 80%;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-family: 'FontAwesome';
+  font-size: 20px;
+  line-height: 1;
+  opacity: .75;
+  color: #000;
+  border: 1px solid;
+  padding: 10px 13px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.slick-prev:before{
+   content: '\f104';
+}
+.slick-next:before{
+  content: '\f105';
+}
+
+.slick-prev{
+  left: 33%;
+  z-index: 9;
+}
+
+.slick-next{
+  right: 34%;
 }
