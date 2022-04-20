@@ -102,51 +102,60 @@
 
     <div class="leaven_header_bottom">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-3">
+
+        <nav class=" navbar-expand-lg navbar-light ">
+          <div class="leaven__middle_wrap">
             <div class="leaven__logo">
-              <a href="index.html">
+              <a  href="index.html">
                 <h1>Leaven <span>.</span></h1>
               </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
             </div>
-            <!-- .leaven__logo -->
-          </div>
-          <div class="col-md-6">
-            <div class="leaven__main_menu">
-              <nav>
-                <ul class="d-flex">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li class="dropdown">
-                    <a href="#">Pages <i class="fa fa-angle-down"></i></a>
-                    <ul>
-                      <li><a href="http://">Pages One </a></li>
-                      <li><a href="http://">Pages Two</a></li>
-                      <li><a href="http://">Pages Three</a></li>
-                      <li><a href="http://">Pages Four</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">Shop</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                </ul>
-              </nav>
+
+            <div class="collapse navbar-collapse leaven__main_menu" id="navbarSupportedContent">
+              <ul class="mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="dropdown">
+                  <a href="#">Pages <i class="fa fa-angle-down"></i></a>
+                  <ul>
+                    <li><a href="http://">Pages One </a></li>
+                    <li><a href="http://">Pages Two</a></li>
+                    <li><a href="http://">Pages Three</a></li>
+                    <li><a href="http://">Pages Four</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>
+              </ul>
+
+              <div class="leaven__search">
+                <form action="#" method="get">
+                  <input type="search" name="s" id="s" placeholder="Search Here..." />
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+              </div>
+
+
             </div>
-            <!-- .leaven__main_menu -->
           </div>
-          <div class="col-md-3">
-            <div class="leaven__search">
-              <form action="#" method="get">
-                <input type="search" name="s" id="s" placeholder="Search Here..." />
-                <button type="submit"><i class="fa fa-search"></i></button>
-              </form>
-            </div>
-            <!-- .leaven__search -->
-          </div>
-        </div>
-        <!-- .row -->
+        </nav>
       </div>
-      <!-- .container -->
     </div>
     <!-- .leaven_header_bottom -->
   </header>
@@ -307,7 +316,7 @@
   <!-- ========== end  Offer Section ========== -->
 
   <!-- ========== start  most viewed Section ========== -->
-  <section  id="leaven__most_viewed_products_area" >
+  <section id="leaven__most_viewed_products_area">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -330,22 +339,8 @@
           <div class="leaven__most_view_carousel">
 
             <div class="leaven__single_carousel_item bg-white">
-                <div class="leaven__single_carousel_thumb bg-repeat" style="background-image: url('./assets/img/bag_product-new.png');"></div>
-                <div class="leaven__carousel_product_meta">
-                  <ul class="d-flex justify-content-center align-content-center">
-                    <li><a href=""><i class="fa fa-shopping-bag"></i></a></li>
-                    <li><a href=""><i class="fa fa-eye"></i></a></li>
-                    <li><a href=""><i class="fa fa-heart"></i></a></li>
-                  </ul>
-                </div>
-                <!-- .leaven__carousel_product_meta -->
-                <h2>Crossbody Messenger Curier Satchel Bag</h2>
-                <p>$170.00</p>
-            </div>
-            <!-- .single_carousel_item -->
-
-            <div class="leaven__single_carousel_item bg-white">
-              <div class="leaven__single_carousel_thumb bg-repeat" style="background-image: url('./assets/img/bag_product-new.png');"></div>
+              <div class="leaven__single_carousel_thumb bg-repeat"
+                style="background-image: url('./assets/img/bag_product-new.png');"></div>
               <div class="leaven__carousel_product_meta">
                 <ul class="d-flex justify-content-center align-content-center">
                   <li><a href=""><i class="fa fa-shopping-bag"></i></a></li>
@@ -356,38 +351,56 @@
               <!-- .leaven__carousel_product_meta -->
               <h2>Crossbody Messenger Curier Satchel Bag</h2>
               <p>$170.00</p>
-          </div>
-          <!-- .single_carousel_item -->
-
-          <div class="leaven__single_carousel_item bg-white">
-            <div class="leaven__single_carousel_thumb bg-repeat" style="background-image: url('./assets/img/bag_product-new.png');"></div>
-            <div class="leaven__carousel_product_meta">
-              <ul class="d-flex justify-content-center align-content-center">
-                <li><a href=""><i class="fa fa-shopping-bag"></i></a></li>
-                <li><a href=""><i class="fa fa-eye"></i></a></li>
-                <li><a href=""><i class="fa fa-heart"></i></a></li>
-              </ul>
             </div>
-            <!-- .leaven__carousel_product_meta -->
-            <h2>Crossbody Messenger Curier Satchel Bag</h2>
-            <p>$170.00</p>
-        </div>
-        <!-- .single_carousel_item -->
+            <!-- .single_carousel_item -->
 
-        <div class="leaven__single_carousel_item bg-white">
-          <div class="leaven__single_carousel_thumb bg-repeat" style="background-image: url('./assets/img/bag_product-new.png');"></div>
-          <div class="leaven__carousel_product_meta">
-            <ul class="d-flex justify-content-center align-content-center">
-              <li><a href=""><i class="fa fa-shopping-bag"></i></a></li>
-              <li><a href=""><i class="fa fa-eye"></i></a></li>
-              <li><a href=""><i class="fa fa-heart"></i></a></li>
-            </ul>
-          </div>
-          <!-- .leaven__carousel_product_meta -->
-          <h2>Crossbody Messenger Curier Satchel Bag</h2>
-          <p>$170.00</p>
-      </div>
-      <!-- .single_carousel_item -->
+            <div class="leaven__single_carousel_item bg-white">
+              <div class="leaven__single_carousel_thumb bg-repeat"
+                style="background-image: url('./assets/img/bag_product-new.png');"></div>
+              <div class="leaven__carousel_product_meta">
+                <ul class="d-flex justify-content-center align-content-center">
+                  <li><a href=""><i class="fa fa-shopping-bag"></i></a></li>
+                  <li><a href=""><i class="fa fa-eye"></i></a></li>
+                  <li><a href=""><i class="fa fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <!-- .leaven__carousel_product_meta -->
+              <h2>Crossbody Messenger Curier Satchel Bag</h2>
+              <p>$170.00</p>
+            </div>
+            <!-- .single_carousel_item -->
+
+            <div class="leaven__single_carousel_item bg-white">
+              <div class="leaven__single_carousel_thumb bg-repeat"
+                style="background-image: url('./assets/img/bag_product-new.png');"></div>
+              <div class="leaven__carousel_product_meta">
+                <ul class="d-flex justify-content-center align-content-center">
+                  <li><a href=""><i class="fa fa-shopping-bag"></i></a></li>
+                  <li><a href=""><i class="fa fa-eye"></i></a></li>
+                  <li><a href=""><i class="fa fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <!-- .leaven__carousel_product_meta -->
+              <h2>Crossbody Messenger Curier Satchel Bag</h2>
+              <p>$170.00</p>
+            </div>
+            <!-- .single_carousel_item -->
+
+            <div class="leaven__single_carousel_item bg-white">
+              <div class="leaven__single_carousel_thumb bg-repeat"
+                style="background-image: url('./assets/img/bag_product-new.png');"></div>
+              <div class="leaven__carousel_product_meta">
+                <ul class="d-flex justify-content-center align-content-center">
+                  <li><a href=""><i class="fa fa-shopping-bag"></i></a></li>
+                  <li><a href=""><i class="fa fa-eye"></i></a></li>
+                  <li><a href=""><i class="fa fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <!-- .leaven__carousel_product_meta -->
+              <h2>Crossbody Messenger Curier Satchel Bag</h2>
+              <p>$170.00</p>
+            </div>
+            <!-- .single_carousel_item -->
 
           </div>
         </div>
@@ -629,51 +642,51 @@
         <div class="col-md-8">
           <div class="leaven__best_seller_products">
             <div class="leaven__best_single_product ">
-                <div class="best_product_thumb" style="background-image: url('./assets/img/bag_product1.png');"></div>
-                <h1>Canvas Crossbody Bag</h1>
-                <h3>$170.00</h3>
+              <div class="best_product_thumb" style="background-image: url('./assets/img/bag_product1.png');"></div>
+              <h1>Canvas Crossbody Bag</h1>
+              <h3>$170.00</h3>
             </div>
             <!-- .leaven__best_single_product  -->
             <div class="leaven__best_single_product ">
-                <div class="best_product_thumb" style="background-image: url('./assets/img/bag_product1.png');"></div>
-                <h1>Canvas Crossbody Bag</h1>
-                <h3>$170.00</h3>
+              <div class="best_product_thumb" style="background-image: url('./assets/img/bag_product1.png');"></div>
+              <h1>Canvas Crossbody Bag</h1>
+              <h3>$170.00</h3>
             </div>
             <!-- .leaven__best_single_product  -->
             <div class="leaven__best_single_product ">
-                <div class="best_product_thumb" style="background-image: url('./assets/img/bag_product1.png');"></div>
-                <h1>Canvas Crossbody Bag</h1>
-                <h3>$170.00</h3>
+              <div class="best_product_thumb" style="background-image: url('./assets/img/bag_product1.png');"></div>
+              <h1>Canvas Crossbody Bag</h1>
+              <h3>$170.00</h3>
             </div>
             <!-- .leaven__best_single_product  -->
             <div class="leaven__best_single_product ">
-                <div class="best_product_thumb" style="background-image: url('./assets/img/bag_product1.png');"></div>
-                <h1>Canvas Crossbody Bag</h1>
-                <h3>$170.00</h3>
+              <div class="best_product_thumb" style="background-image: url('./assets/img/bag_product1.png');"></div>
+              <h1>Canvas Crossbody Bag</h1>
+              <h3>$170.00</h3>
             </div>
             <!-- .leaven__best_single_product  -->
             <div class="leaven__best_single_product ">
-                <div class="best_product_thumb" style="background-image: url('./assets/img/bag_product1.png');"></div>
-                <h1>Canvas Crossbody Bag</h1>
-                <h3>$170.00</h3>
+              <div class="best_product_thumb" style="background-image: url('./assets/img/bag_product1.png');"></div>
+              <h1>Canvas Crossbody Bag</h1>
+              <h3>$170.00</h3>
             </div>
             <!-- .leaven__best_single_product  -->
             <div class="leaven__best_single_product ">
-                <div class="best_product_thumb" style="background-image: url('./assets/img/bag_product1.png');"></div>
-                <h1>Canvas Crossbody Bag</h1>
-                <h3>$170.00</h3>
+              <div class="best_product_thumb" style="background-image: url('./assets/img/bag_product1.png');"></div>
+              <h1>Canvas Crossbody Bag</h1>
+              <h3>$170.00</h3>
             </div>
             <!-- .leaven__best_single_product  -->
             <div class="leaven__best_single_product ">
-                <div class="best_product_thumb" style="background-image: url('./assets/img/bag_product1.png');"></div>
-                <h1>Canvas Crossbody Bag</h1>
-                <h3>$170.00</h3>
+              <div class="best_product_thumb" style="background-image: url('./assets/img/bag_product1.png');"></div>
+              <h1>Canvas Crossbody Bag</h1>
+              <h3>$170.00</h3>
             </div>
             <!-- .leaven__best_single_product  -->
             <div class="leaven__best_single_product ">
-                <div class="best_product_thumb" style="background-image: url('./assets/img/bag_product1.png');"></div>
-                <h1>Canvas Crossbody Bag</h1>
-                <h3>$170.00</h3>
+              <div class="best_product_thumb" style="background-image: url('./assets/img/bag_product1.png');"></div>
+              <h1>Canvas Crossbody Bag</h1>
+              <h3>$170.00</h3>
             </div>
             <!-- .leaven__best_single_product  -->
 

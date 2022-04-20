@@ -2,16 +2,26 @@
 /* // No media query for `xs` since this is the default in Bootstrap */
 
 /* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
+@media (max-width: 576px) {
 
     /* leaven header top */
-    .leaven__top-left_content ul li {
+    .leaven_header_top .leaven__top-left_content ul li {
         display: block;
+        margin: 0 auto;
         text-align: center;
     }
-
     .leaven__top-left_content ul {
         margin-bottom: 23px;
+    }
+    .leaven__logo {
+        display: flex !important;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    /* sale area */
+    .leaven__sale_content {
+        padding: 70px 0;
     }
 }
 

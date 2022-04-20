@@ -170,7 +170,12 @@ a {
 .leaven_header_bottom {
   padding: 25px 0;
 }
-
+.leaven__middle_wrap{
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+}
 /* Logo */
 .leaven__logo h1 {
   color: var(--secondary);
@@ -182,10 +187,19 @@ a {
 }
 
 /* Main Menu */
-.leaven__main_menu ul li {
-  position: relative;
+.navbar-collapse.leaven__main_menu {
+  flex-grow: 0;
 }
-
+.navbar-collapse.leaven__main_menu {
+  flex-grow: 0;
+}
+.leaven__main_menu ul {
+  margin-right: 113px;
+}
+.leaven__main_menu ul li{
+  position: relative;
+  display: inline-block;
+}
 .leaven__main_menu ul li a {
   color: var(--secondary);
   padding: 2px 15px;
