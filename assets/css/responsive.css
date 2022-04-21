@@ -10,29 +10,53 @@
         margin: 0 auto;
         text-align: center;
     }
+
     .leaven__top-left_content ul {
         margin-bottom: 23px;
     }
+
     .leaven__logo {
         display: flex !important;
         justify-content: space-between;
         width: 100%;
     }
 
+    .leaven__middle_wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
     /* sale area */
     .leaven__sale_content {
         padding: 70px 0;
     }
+
+    /* best feature img */
+    .leaven__best_featured_img {
+        margin-bottom: 57px;
+        height: 150px;
+    }
+    .leaven__best_seller_products {
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 0;
+        grid-row-gap: 55px;
+    }
+    .best_product_thumb {
+        height: 200px;
+        margin-bottom: 30px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
 
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {}
+@media (max-width: 768px) {}
 
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
+@media (max-width: 992px) {}
 
 /* // X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
+@media (max-width: 1200px) {}
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {}
+@media (max-width: 1400px) {}
