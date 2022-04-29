@@ -1052,3 +1052,49 @@ h2.footer-widget-title span {
   color: #fff;
   text-decoration: none;
 }
+
+
+/* 
+      * ============================================
+            01. error area
+      * ============================================
+     */
+section#leaven__error {
+  padding: 150px 0;
+}
+
+.error-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.error-img img {
+  margin: auto;
+}
+
+h2.error-title {
+  position: absolute;
+  left: 50%;
+  margin-left: 31px;
+  transform: translateX(-50%);
+  bottom: 0px;
+  color: var(--primary);
+  font-family: 'Work Sans';
+}
+
+.error-area {
+  position: relative;
+}
+
+.error-area a.action-btn {
+  background: var(--secondary);
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  padding: 11px 30px;
+  position: absolute;
+  left: 50%;
+  margin-top: 26px;
+  transform: translateX(-50%);
+}
