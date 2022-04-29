@@ -170,12 +170,14 @@ a {
 .leaven_header_bottom {
   padding: 25px 0;
 }
-.leaven__middle_wrap{
-    display: flex;
-    flex-wrap: inherit;
-    align-items: center;
-    justify-content: space-between;
+
+.leaven__middle_wrap {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
 }
+
 /* Logo */
 .leaven__logo h1 {
   color: var(--secondary);
@@ -190,16 +192,20 @@ a {
 .navbar-collapse.leaven__main_menu {
   flex-grow: 0;
 }
+
 .navbar-collapse.leaven__main_menu {
   flex-grow: 0;
 }
+
 .leaven__main_menu ul {
   margin-right: 113px;
 }
-.leaven__main_menu ul li{
+
+.leaven__main_menu ul li {
   position: relative;
   display: inline-block;
 }
+
 .leaven__main_menu ul li a {
   color: var(--secondary);
   padding: 2px 15px;
@@ -343,15 +349,18 @@ section#leaven__hero_area {
 section#leaven__hero_area .slick-dots {
   bottom: 12%;
 }
+
 section#leaven__hero_area .slick-dots li {
   width: 15px;
   height: 15px;
   background-color: #ddd;
   border-radius: 50%;
 }
-section#leaven__hero_area .slick-dots li.slick-active{
-   background-color: var(--primary);
+
+section#leaven__hero_area .slick-dots li.slick-active {
+  background-color: var(--primary);
 }
+
 /* 
       * ============================================
             04. Promo Area
@@ -806,29 +815,31 @@ section#leaven__most_viewed_products_area {
 }
 
 
-.leaven__single_carousel_item.slick-slide.slick-current.slick-active.slick-center{
+.leaven__single_carousel_item.slick-slide.slick-current.slick-active.slick-center {
   transform: scale(1.2);
   padding: 70px 50px;
 }
 
-.leaven__single_carousel_item .leaven__carousel_product_meta{
+.leaven__single_carousel_item .leaven__carousel_product_meta {
   opacity: 0;
   margin-top: -30px;
   transition: all .4s ease-in;
 }
 
 
-.leaven__single_carousel_item.slick-slide.slick-current.slick-active.slick-center .leaven__carousel_product_meta{
+.leaven__single_carousel_item.slick-slide.slick-current.slick-active.slick-center .leaven__carousel_product_meta {
   opacity: 1;
   margin-top: 0;
 }
-.leaven__single_carousel_item.slick-slide.slick-current.slick-active.slick-center h2{
+
+.leaven__single_carousel_item.slick-slide.slick-current.slick-active.slick-center h2 {
   font-size: 80%;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.slick-prev:before, .slick-next:before {
+.slick-prev:before,
+.slick-next:before {
   font-family: 'FontAwesome';
   font-size: 20px;
   line-height: 1;
@@ -839,18 +850,205 @@ section#leaven__most_viewed_products_area {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.slick-prev:before{
-   content: '\f104';
+
+.slick-prev:before {
+  content: '\f104';
 }
-.slick-next:before{
+
+.slick-next:before {
   content: '\f105';
 }
 
-.slick-prev{
+.slick-prev {
   left: 33%;
   z-index: 9;
 }
 
-.slick-next{
+.slick-next {
   right: 34%;
+}
+
+/* 
+      * ============================================
+            11. subscribe Area
+      * ============================================
+     */
+#leaven__subscribe_area {
+  padding: 70px 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.leaven__subscribe h2 {
+  font-family: 'Work Sans';
+  font-weight: 600;
+  font-size: 45px;
+}
+
+.leaven__subscribe h4 {
+  font-family: 'Work Sans';
+  font-size: 23px;
+}
+
+.leaven__subscribe form input[type="text"] {
+  border: 2px solid var(--primary);
+  padding: 13px 14px;
+  border-radius: 5px;
+  margin-right: 35px;
+}
+
+.leaven__subscribe form input[type="submit"] {
+  background: var(--primary);
+  border-radius: 5px;
+  border: transparent;
+  color: #fff;
+  width: 200px;
+  margin-right: 0;
+  height: 54px;
+}
+
+.leaven__subscribe form {
+  margin-top: 35px;
+}
+
+.leaven__subscribe form span.small-text {
+  font-family: 'Work Sans';
+  font-size: 14px;
+}
+
+/* 
+      * ============================================
+            12. payment method  Area
+      * ============================================
+     */
+#leaven__payment_area {
+  padding: 100px 0;
+}
+
+#leaven__payment_area .leaven__section_title {
+  margin-bottom: 25px;
+}
+
+.leaven__payment_method {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.leaven__payment_method img {
+  width: 100px;
+  margin: auto;
+  height: 50px;
+}
+
+/* 
+      * ============================================
+            13. footer Area
+      * ============================================
+     */
+
+/* .footer top area */
+.leaven__footer_top_area {
+  background-color: var(--secondary);
+  padding: 40px 0;
+}
+
+.footer-widget-title {
+  color: #fff;
+  font-family: 'Work Sans';
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+h2.footer-widget-title {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+h4.footer-widget-title:after {
+  position: absolute;
+  content: '';
+  width: 30px;
+  height: 3px;
+  background: var(--primary);
+  bottom: 0;
+  left: 0;
+}
+
+h2.footer-widget-title span {
+  color: var(--primary);
+  margin-left: -7px;
+}
+
+.footer-widget-content ul li a {
+  color: #fff;
+  font-family: 'Work Sans';
+  font-size: 16px;
+}
+
+.footer-widget-content ul li a:hover {
+  color: var(--primary);
+}
+
+.footer-widget-content ul li a i {
+  margin-right: 12px;
+}
+
+.contact-list {
+  color: #fff;
+  font-size: 15px;
+}
+
+.contact-list i {
+  margin-right: 11px;
+}
+
+.contact-info ul li {
+  margin-bottom: 5px;
+}
+
+.social-touch {
+  margin-top: 35px;
+}
+
+.social-touch h4 {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.social-touch ul li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.social-touch ul li a {
+  display: block;
+  background: #fff;
+  color: var(--secondary);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.social-touch ul li a:hover {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+/*  .footer bottom  */
+.leaven__footer_bottom_area {
+  padding: 25px 0;
+  background-color: var(--primary);
+  color: #fff;
+  text-align: center;
+  font-family: 'Work Sans';
+}
+
+.leaven__footer_bottom_area a {
+  color: #fff;
+  text-decoration: none;
 }
