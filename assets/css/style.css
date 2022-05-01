@@ -1211,3 +1211,113 @@ p.notify {
   color: #fff;
   background: var(--primary);
 }
+
+/* 
+      * ============================================
+            01.contact page
+      * ============================================
+     */
+.breadcrumb_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.breadcrumbBg {
+  background: #ededed;
+}
+
+.breadcrumb_title nav ol li.breadcrumb-item.active {
+  color: var(--primary);
+  font-family: 'Montserrat';
+  font-size: 13px;
+}
+
+.breadcrumb_title nav ol li.breadcrumb-item.active i {
+  color: #000;
+  margin-right: 8px
+}
+
+.breadcrumb_title nav ol li {
+  font-family: 'Montserrat';
+  font-size: 13px;
+}
+
+.breadcrumb_title nav ol li a {
+
+  color: #000;
+}
+
+li.breadcrumb-item:before {
+  display: none;
+}
+
+.breadcrumb_title h3 {
+  font-size: 20px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 7px;
+}
+
+.contact {
+  padding: 100px 0;
+}
+
+.contact-info h4 {
+  font-size: 25px;
+  font-family: 'Work Sans';
+  color: var(--primary);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact-wrap {
+  display: flex;
+}
+
+.contact-wrap i {
+  margin-right: 20px;
+  color: var(--primary);
+  margin-top: 6px;
+}
+
+.contact-wrap p {
+  font-family: 'Work Sans';
+  font-size: 16px;
+  color: var(--primary);
+}
+
+.contact-info-list-right form label {
+  font-size: 14px;
+  color: #202b30;
+  margin-bottom: 7px;
+  font-weight: bold;
+}
+
+.contact-info-list-right form input[type="submit"] {
+  display: block;
+  margin-left: auto;
+  background: var(--primary);
+  border: 0;
+  color: #fff;
+  padding: 5px 30px;
+}
+
+.quickConnect {
+  margin-top: 40px;
+}
+
+.quickConnect .social ul li {
+  display: inline-block;
+  background: transparent;
+}
+
+.quickConnect .social ul li a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
