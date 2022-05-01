@@ -1130,11 +1130,7 @@ section#comingSoonArea {
   margin-bottom: 50px;
 }
 
-.time {
-  border: 3px solid var(--primary);
-  margin-right: 25px;
-  padding: 25px;
-}
+
 
 .timer ul {
   display: grid;
@@ -1143,10 +1139,25 @@ section#comingSoonArea {
 
 .time {
   position: relative;
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-  background: lightblue;
-  padding: 40px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.time:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  transform: rotate(45deg);
+  width: 100%;
+  height: 100%;
+  border: 3px solid var(--primary);
+}
+
+
 
 p.notify {
   margin: 0;
