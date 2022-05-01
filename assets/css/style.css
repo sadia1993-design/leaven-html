@@ -1321,3 +1321,9 @@ li.breadcrumb-item:before {
   height: 30px;
   line-height: 30px;
 }
+
+.contact-info-list-right form input,
+.contact-info-list-right form textarea {
+  background: #ededed;
+  border: 0;
+}
