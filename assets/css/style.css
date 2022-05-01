@@ -1350,3 +1350,91 @@ li.breadcrumb-item:before {
 .contact-info .accordion-item {
   margin-bottom: 10px;
 }
+
+/* 
+      * ============================================
+            01.cart page
+      * ============================================
+     */
+.cart-info table thead tr th {
+  color: var(--primary);
+  font-size: 13px;
+  text-align: center;
+}
+
+.item-details {
+  display: flex;
+  align-items: top;
+}
+
+.item-thumb img {
+  width: 70px;
+  margin-right: 22px;
+}
+
+.cart-info table tbody tr td i {
+  color: var(--primary);
+}
+
+.cart-info table {
+  border-top: 1px solid var(--primary);
+  border-bottom: 1px solid var(--primary);
+}
+
+.cart-total {
+  box-shadow: 0 2px 2px #ccc;
+  padding: 18px;
+}
+
+
+
+.cart-total table tbody tr {
+  margin-bottom: 20px;
+  display: block;
+}
+
+.cart-total table {
+  width: 100%;
+}
+
+.cart-total table tr td {
+  width: 100%;
+}
+
+.cart-total table tbody tr td button.custom,
+.cart-total table tbody tr td input.custom {
+  width: 100% !important;
+  background: var(--primary);
+  color: #fff;
+  border: 0;
+
+}
+
+.cart-total table tbody tr td button {
+  width: 100% !important;
+  background: var(--secondary);
+  color: #fff;
+  border: 0;
+
+}
+
+.cart-total table tbody tr td input[type="text"] {
+  border: 1px solid var(--primary);
+  padding: 8px;
+}
+
+.cart-total table tbody tr td input::placeholder {
+  color: var(--primary);
+}
+
+.qty ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0;
+}
+
+.qty ul li {
+  border: 1px solid #000;
+  text-align: center;
+  font-weight: bold;
+}
