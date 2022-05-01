@@ -1098,3 +1098,105 @@ h2.error-title {
   margin-top: 26px;
   transform: translateX(-50%);
 }
+
+/* 
+      * ============================================
+            01.coming soon page
+      * ============================================
+     */
+section#comingSoonArea {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.comingWrap h2 {
+  font-family: work sans;
+  font-weight: bold;
+  font-size: 150px;
+  line-height: 0.9em;
+  color: var(--primary);
+}
+
+.comingWrap p {
+  margin-top: 42px;
+  font-family: 'Work Sans';
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.time {
+  border: 3px solid var(--primary);
+  margin-right: 25px;
+  padding: 25px;
+}
+
+.timer ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.time {
+  position: relative;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  background: lightblue;
+  padding: 40px;
+}
+
+p.notify {
+  margin: 0;
+  font-size: 20px;
+  font-family: 'Work Sans';
+  margin-bottom: 15px;
+  margin-top: 36px;
+}
+
+.comingWrap form input {
+  width: 200px;
+  box-sizing: border-box;
+  padding: 9px 0px 9px 10px;
+  background: transparent;
+  border: 3px solid var(--primary);
+  border-radius: 7px;
+  margin-right: 28px;
+}
+
+.comingWrap form input[type="submit"] {
+  margin-right: 0;
+  color: #fff;
+  background: var(--primary);
+}
+
+.comingWrap form input::placeholder {
+  color: #fff;
+  font-family: 'Work Sans';
+  font-size: 14px;
+}
+
+.social-icon ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 28px;
+}
+
+.social-icon ul li a {
+  color: var(--secondary);
+  background: #fff;
+  margin-right: 10px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: block;
+  line-height: 30px;
+}
+
+.social-icon ul li a:hover {
+  color: #fff;
+  background: var(--primary);
+}
