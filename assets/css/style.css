@@ -1364,7 +1364,7 @@ li.breadcrumb-item:before {
 
 .item-details {
   display: flex;
-  align-items: top;
+  align-items: center;
 }
 
 .item-thumb img {
@@ -1437,4 +1437,10 @@ li.breadcrumb-item:before {
   border: 1px solid #000;
   text-align: center;
   font-weight: bold;
+}
+
+.cart-info table tr {
+  display: table;
+  vertical-align: middle;
+  width: 100%;
 }
